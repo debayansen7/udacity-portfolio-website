@@ -12,6 +12,7 @@ h2{
 }
 h3{
     font-size: $head3;
+    color: $color3
 }
 
 .common{
@@ -32,7 +33,8 @@ h3{
     border-bottom: 4px solid $color3;
     // border: 4px solid $color3;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
     .logo{
         @extend .common;
         text-align: left;
@@ -73,6 +75,10 @@ h3{
     .bannerImg{
         width: 100%;
         height: 300px;
+        img{
+            width: 100%;
+            height: 300px;
+        }
         // border: 2px solid red;
     }
     .topThree{
@@ -92,6 +98,7 @@ h3{
 
             figure{
                 // text-align: center;
+                padding: 5px;
                 img{
                     width: 100%;
                     height: 200px;
@@ -101,6 +108,11 @@ h3{
 
                     h3{
 
+                    }
+                    a{
+                        color: $color3;
+                        text-decoration: none;
+                        cursor: pointer;
                     }
                 }
             }
