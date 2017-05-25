@@ -1,115 +1,130 @@
-*, body{
-    margin:0px;
-    padding:0px;
+*,body {
+    margin: 0;
+    padding: 0;
 }
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,400');
 @import "var.scss";
-h1{
-    font-size: $head1;
-    font-weight: 100;
-}
-h2{
-    font-size: $head2;
-}
-h3{
-    font-size: $head3;
-    color: $color3
-}
 
-.common{
+.common {
     display: block;
     width: 100%;
     height: auto;
     color: $color2;
-    font-family: $font-family;
+    font-family: $fontFamily;
 }
 
-.wrapper{
+.wrapper {
     // @extend .common;
     // width: 80%;
     // margin: 0px auto;
 }
 
-.header{
+.header {
     border-bottom: 4px solid $color3;
     // border: 4px solid $color3;
     display: block;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    .logo{
+
+    .logo {
         @extend .common;
         text-align: left;
         display: inline-block;
         width: auto;
         padding: 10px;
-        img{
-            // width: 80px; //Desktop
+
+        img {
+
             // width: 50px; //tablet
             width: 50px; //mobile
         }
     }
-    .title{
+
+    .title {
         display: inline-block;
         width: 75%;
         padding: 10px;
-        h1, h3{
+
+        h1,
+        h3 {
             text-align: right;
             vertical-align: bottom;
             text-transform: uppercase;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
         }
 
+        h1 {
+            font-size: $head1;
+            font-weight: 100;
+            font-family: $fontFamily;
+        }
+
+        h3 {
+            font-family: $fontFamily;
+            font-size: $head3;
+            color: $color3;
+            text-transform: uppercase;
+        }
     }
 }
 
-.footer{
+.footer {
     padding: 5px;
     text-align: center;
     background-color: #000;
     color: #fff;
 }
 
-.content{
+.content {
     @extend .common;
     margin-bottom: 10px;
-    .bannerImg{
-        width: 100%;
-        height: 300px;
-        img{
+
+    .bannerImg {
+        img {
             width: 100%;
-            height: 300px;
         }
-        // border: 2px solid red;
     }
-    .topThree{
+
+    h2 {
+        font-size: $head2;
+    }
+
+    .topThree {
         // width: 100%;
         h2 {
             margin-bottom: 5px;
         }
-        img{
+
+        img {
             width: 400px;
         }
 
-        .articles{
+        .articles {
             display: inline-block;
             // border: 2px solid red;
             // width: 33%;
             // width: calc(100% / 3);
-
-            figure{
+            figure {
                 // text-align: center;
                 padding: 5px;
-                img{
+
+                img {
                     width: 100%;
                     height: 200px;
                 }
-                figcaption{
+
+                figcaption {
                     text-align: center;
 
-                    h3{
-
+                    h3 {
+                        font-family: $fontFamily;
+                        font-size: $head3;
+                        color: $color3;
+                        text-transform: uppercase;
                     }
-                    a{
+
+                    a {
                         color: $color3;
                         text-decoration: none;
                         cursor: pointer;
@@ -118,6 +133,24 @@ h3{
             }
         }
     }
+}
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .header .logo img{
+        width: 60px; // Tablet
+    }
+
+}
+@media only screen and (min-device-width: 1025px) {
+    .header .logo img{
+        width: 80px; //Desktop
+    }
+    .header .title{
+        padding: 20px 10px;
+    }
+
+    .content .bannerImg img{
+        height: 300px;
+    }
 
 }

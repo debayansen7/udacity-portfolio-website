@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+.common, .header .logo, .content {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #7d97ad;
+  font-family: "Roboto", "sans-serif", "Tahoma", "Verdana", "Arial";
+}
+
+.header {
+  border-bottom: 4px solid #2d3c49;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.header .logo {
+  text-align: left;
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+}
+
+.header .logo img {
+  width: 50px;
+}
+
+.header .title {
+  display: inline-block;
+  width: 75%;
+  padding: 10px;
+}
+
+.header .title h1,
+.header .title h3 {
+  text-align: right;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.header .title h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+  font-family: "Roboto", "sans-serif", "Tahoma", "Verdana", "Arial";
+}
+
+.header .title h3 {
+  font-family: "Roboto", "sans-serif", "Tahoma", "Verdana", "Arial";
+  font-size: 1.2em;
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.content {
+  margin-bottom: 10px;
+}
+
+.content .bannerImg img {
+  width: 100%;
+}
+
+.content h2 {
+  font-size: 2em;
+}
+
+.content .topThree h2 {
+  margin-bottom: 5px;
+}
+
+.content .topThree img {
+  width: 400px;
+}
+
+.content .topThree .articles {
+  display: inline-block;
+}
+
+.content .topThree .articles figure {
+  padding: 5px;
+}
+
+.content .topThree .articles figure img {
+  width: 100%;
+  height: 200px;
+}
+
+.content .topThree .articles figure figcaption {
+  text-align: center;
+}
+
+.content .topThree .articles figure figcaption h3 {
+  font-family: "Roboto", "sans-serif", "Tahoma", "Verdana", "Arial";
+  font-size: 1.2em;
+  color: #2d3c49;
+  text-transform: uppercase;
+}
+
+.content .topThree .articles figure figcaption a {
+  color: #2d3c49;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header .logo img {
+    width: 60px;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) {
+  .header .logo img {
+    width: 80px;
+  }
+  .header .title {
+    padding: 20px 10px;
+  }
+  .content .bannerImg img {
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
