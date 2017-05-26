@@ -24,24 +24,29 @@
 <body>
     <section class="wrapper container">
 
-        <header class="header">
-            <div class="logo">
+        <header class="header-area container row">
+            <div class="logo col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <img src="img/logo-mark.svg" alt="logo here">
             </div>
-            <div class="title pull-right">
-                <h1>Test</h1>
+            <div class="title col-xs-8 col-sm-8 col-md-8 col-lg-8 pull-right">
+                <h1>Debayan Sen</h1>
                 <h3>Front-End Ninja</h3>
             </div>
         </header>
 
-        <section class="content">
-            <section class="bannerImg">
-                <figure id="bannerArea">
-                    <img class="img-fluid" src="img/bannerImg.jpg" alt="bannerImage">
-                </figure>
+        <section class="content-area container row">
+            <section class="banner-img col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img class="img-responsive" src="img/bannerImg.jpg"
+                    srcset="img/bannerImg.jpg 300, img/bannerImg-2x.jpg 900, img/bannerImg-hd.jpg 1200"
+                    alt="bannerImage">
             </section>
-            <h2>Featured Works</h2>
-            <section class="topThree row">
+            <section class="about-me row">
+                <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">About Me</h2>
+                <p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Hi I am Debayan Sen. I a web-developer.</p>
+            </section>
+
+            <section class="featured-works row">
+                <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Featured Works</h2>
                 <article class="articles col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <figure>
                         <img class="img-responsive" src="img/qafco.png" alt="qafco">
@@ -80,8 +85,10 @@
             </section>
         </section>
 
-        <footer class="footer">
-            Created by Debayan Sen
+        <footer class="footer-area container row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                Created By Debayan Sen
+            </div>
         </footer>
 
     </section>
